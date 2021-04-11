@@ -35,7 +35,8 @@ class UsuarioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $usuario = usuario::create($request->all());
+        return $usuario;
     }
 
     /**
@@ -46,7 +47,7 @@ class UsuarioController extends Controller
      */
     public function show(usuario $usuario)
     {
-        //
+
     }
 
     /**
